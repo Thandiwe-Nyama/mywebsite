@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizana Tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Explore the World with Us</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Our Tour Agency</h2>
+        <p>Discover amazing destinations with our exclusive tour packages.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Explore the World, we are passionate about travel and providing unforgettable experiences. Our team of travel experts carefully curates each tour package to ensure a unique and enjoyable journey. Whether you’re looking to explore historical landmarks, experience local cultures, or simply relax in beautiful destinations, we have the perfect tour for you.</p>
+        <p>Founded in 2020, our mission is to make travel accessible and enjoyable for everyone. We prioritize customer satisfaction and work closely with local guides and partners to provide top-notch service.</p>
+    </section>
+    
+    <section id="tours">
+        <h2>Our Tour Packages</h2>
+        <div class="tour-package">
+            <h3>Bizana Adventure</h3>
+            <p>Experience the magic of Paris with our guided tours and exclusive access to top attractions.</p>
+            <button onclick="showDetails('Paris Adventure')">View Details</button>
+            <div class="details" id="Paris Adventure" style="display: none;">
+                <p>Tour details: Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and more.</p>
+            </div>
+        </div>
+        <div class="tour-package">
+            <h3>Bizana Town</h3>
+            <p>Explore the vibrant town of Bizana with visits to iconic landmarks and Broadway shows.</p>
+            <button onclick="showDetails('Bizana')">View Details</button>
+            <div class="details" id="Bizana" style="display: none;">
+                <p>Tour details: Statue of Liberty, Times Square, Central Park, and more.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Tour Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
