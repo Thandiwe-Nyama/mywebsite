@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Explore the World with Us</h1>
+        <a href="#" class="logo">Thandiwe.N.</a>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -17,60 +17,131 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
-        <div class="bx bx-moon" id="darkMode-icon"></div>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
     <section id="home">
-        <h2>Welcome to Our Tour Agency</h2>
-        <p>Discover amazing destinations with our exclusive tour packages.</p>
+        <div class="home-content">
+            <h2>Welcome to Our Tour Agency</h2>
+            <p>Discover amazing destinations with our exclusive tour packages.</p>
+        </div>
+        <img src="Images/hole-in-the-wall.jpg" alt="Hole in the Wall">
     </section>
+    
 
     <section id="about">
-        <h2>About Us</h2>
-        <p>At Explore the World, we are passionate about travel and providing unforgettable experiences. Our team of travel experts carefully curates each tour package to ensure a unique and enjoyable journey. Whether you’re looking to explore historical landmarks, experience local cultures, or simply relax in beautiful destinations, we have the perfect tour for you.</p>
-        <p>Founded in 2020, our mission is to make travel accessible and enjoyable for everyone. We prioritize customer satisfaction and work closely with local guides and partners to provide top-notch service.</p>
-    </section>
-    
-    <section id="tours">
-        <h2>Our Tour Packages</h2>
-        <div class="tour-package">
-            <h3>Bizana Adventure</h3>
-            <p>Experience the magic of Paris with our guided tours and exclusive access to top attractions.</p>
-            <button onclick="showDetails('Paris Adventure')">View Details</button>
-            <div class="details" id="Paris Adventure" style="display: none;">
-                <p>Tour details: Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and more.</p>
-            </div>
-        </div>
-        <div class="tour-package">
-            <h3>Bizana Town</h3>
-            <p>Explore the vibrant town of Bizana with visits to iconic landmarks and Broadway shows.</p>
-            <button onclick="showDetails('Bizana')">View Details</button>
-            <div class="details" id="Bizana" style="display: none;">
-                <p>Tour details: Statue of Liberty, Times Square, Central Park, and more.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Tour Agency. All rights reserved.</p>
-    </footer>
+        <div class="about-content">
+             <h2>About Us</h2>
+             <p>Mbizana is made up of a main town and surrounding villages, located in the Eastern Cape Province on the R61 road connecting KwaZulu Natal South Coastal Boundary to the N2 highway.
 
-    <script src="script.js"></script>
+              With a population of approximately 246 516 living in 46 730 households occupying an area of roughly 2 806 km2, Mbizana prides itself on cultural diversity which includes a variety of tribes such as Xhosa’s, Mpondo’s, Sotho’s and Nguni’s. However, the population is dominated by the Mpondo tribe, which has its own unique dialect, isiMpondo a soft mixture of isiXhosa and isiZulu. A female dominated society, as men only account for 46% of the population, the municipality makes efforts to integrate and incorporate women in key decision making roles within the institution, to reflect this demographic.
+            
+              The majority of households in Mbizana are of a rural nature as close to 95% of the population resides in the surrounding villages, with the rest living in the urban area. This results in natural resources proving a strong base for basic survival as those living in rural areas turn to subsistence farming for their livelihoods.
+            
+              Unemployment is a crisis throughout South Africa, and Mbizana still remains affected as a large portion of the population is still struggling to secure formal employment. Mbizana Local Municipality is currently made up of 32 wards and is one of the local municipalities under Alfred Nzo District Municipality</p>
+        </div>
+    </section>
+
+    <section id="tour" id="tour">
+        <div class="tour-container">
+            <h2>Explore With Us</h2>
+            <div class="tour-box">
+                <img src="Images/BLEACH-1.jpg" alt="">
+                <div class="tour-layer">
+                    <h4>ATTRACTIONS</h4>
+                </div>
+            </div>
+    
+            <div class="tour-box">
+                <img src="Images/Things to do.jpg" alt="">
+                <div class="tour-layer">
+                    <h4>THINGS TO DO</h4>
+                </div>
+            </div>
+
+            <div class="tour-box">
+                <img src="Images/one-of-our-b-b-rooms.jpg" alt="">
+                <div class="tour-layer">
+                    <h4>WHERE TO STAY</h4>
+                </div>
+            </div>
+
+            <div class="tour-box">
+                <img src="Images/Region.jpg" alt="">
+                <div class="tour-layer">
+                    <h4>REGIONS</h4>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+    
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class='bx bx-phone' ><strong>Phone:</strong> +27 78 653 0315</i></p>
+                    <p><i class='bx bxs-envelope' ><strong>Email:</strong> thandiwenyama2@gmail.com</i></p>
+                    <p><i class='bx bx-current-location'><strong>Address:</strong> Winnie Mandela street Capetown Langa, 7455</i></p>
+                </div>
+                <form action="#">
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" placeholder="Full Name" id="name"
+                            class="item" autocomplete="off">
+                            <div class="error-txt">Full Name cannot be blank</div>
+                        </div>
+                        <div class="input-field field">
+                            <input type="text" placeholder="Email Address" id="email"
+                            class="item" autocomplete="off">
+                            <div class="error-txt email">Email Address cannot be blank</div>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" placeholder="Phone Number" id="phone"
+                            class="item" autocomplete="off">
+                            <div class="error-txt">Phone Number cannot be blank</div>
+                        </div>
+                        <div class="input-field field">
+                            <input type="text" placeholder="Subject" id="subject"
+                            class="item" autocomplete="off">
+                            <div class="error-txt">Subject cannot be blank</div>
+                        </div>
+                    </div>
+                    <div class="textarea-field field">
+                        <textarea name="" id="message" cols="30" rows="10"
+                        placeholder="Your Message" class="item"
+                        autocomplete="off"></textarea>
+                        <div class="error-txt">Message cannot be blank</div>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    
+        <!--===============Footer design==========-->
+        
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Coptright &copy;2024 by Thandiwe Nyama | All Rights Reserved</p>
+                <div class="footer-iconTop">
+                    <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+                </div>
+            </div>
+        </footer>
+    
+        <!--scroll reveal-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    
+        <!--swiper js-->
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+             <!--==========Importing JavaScript===========-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="script.js"></script>
+        <script src="circle-progress.js"></script>
 </body>
 </html>
